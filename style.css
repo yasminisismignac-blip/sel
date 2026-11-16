@@ -1,0 +1,41 @@
+.stme-floating-buttons {
+    position: fixed;
+    right: 16px;
+    bottom: 20px;
+    z-index: 999999;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.stme-floating-buttons.stme-visible {
+    display: flex;
+}
+
+.stme-btn {
+    width: 56px;
+    height: 56px;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,.35);
+}
+
+.stme-save {
+    background: #28a745;
+    color: white;
+}
+
+.stme-cancel {
+    background: #dc3545;
+    color: white;
+}
+
+.stme-btn:hover {
+    transform: scale(1.05);
+}
+
+.stme-btn:active {
+    transform: scale(.95);
+}
